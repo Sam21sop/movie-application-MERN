@@ -1,179 +1,104 @@
 {
-    "movies": [
+    "movies":[
         {
             "id": 1,
-            "movie": "The Shawshank Redemption",
-            "rating": 9.2,
-            "image": "images/shawshank.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0111161/"
+            "title": "Inception",
+            "description": "A mind-bending thriller",
+            "releaseYear": 2010,
+            "genre": "Sci-Fi",
+            "watched": false,
+            "rating": 4,
+            "reviews": []
         },
         {
             "id": 2,
-            "movie": "The Godfather",
-            "rating": 9.2,
-            "image": "images/godfather.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0068646/"
+            "title": "The Dark Knight",
+            "description": "Batman battles the Joker",
+            "releaseYear": 2008,
+            "genre": "Action",
+            "watched": true,
+            "rating": 5,
+            "reviews": []
         },
         {
             "id": 3,
-            "movie": "The Dark Knight",
-            "rating": 9,
-            "image": "images/dark_knight.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0468569/"
+            "title": "Interstellar",
+            "description": "A journey through space and time",
+            "releaseYear": 2014,
+            "genre": "Sci-Fi",
+            "watched": false,
+            "rating": 5,
+            "reviews": []
         },
         {
             "id": 4,
-            "movie": "Pulp Fiction",
-            "rating": 8.9,
-            "image": "images/pulp_fiction.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0110912/"
+            "title": "The Matrix",
+            "description": "A hacker discovers reality is a simulation",
+            "releaseYear": 1999,
+            "genre": "Sci-Fi",
+            "watched": true,
+            "rating": 4,
+            "reviews": []
         },
         {
             "id": 5,
-            "movie": "The Lord of the Rings: The Return of the King",
-            "rating": 9,
-            "image": "images/lotr_return_king.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0167260/"
+            "title": "Pulp Fiction",
+            "description": "Intersecting stories of crime and redemption",
+            "releaseYear": 1994,
+            "genre": "Crime",
+            "watched": false,
+            "rating": 5,
+            "reviews": []
         },
         {
             "id": 6,
-            "movie": "The Good, the Bad and the Ugly",
-            "rating": 8.8,
-            "image": "images/good_bad_ugly.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0060196/"
+            "title": "Fight Club",
+            "description": "An insomniac forms an underground fight club",
+            "releaseYear": 1999,
+            "genre": "Drama",
+            "watched": false,
+            "rating": 4,
+            "reviews": []
         },
         {
             "id": 7,
-            "movie": "Fight Club",
-            "rating": 8.8,
-            "image": "images/fight_club.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0137523/"
+            "title": "Forrest Gump",
+            "description": "The life story of a slow-witted man",
+            "releaseYear": 1994,
+            "genre": "Drama",
+            "watched": true,
+            "rating": 5,
+            "reviews": []
         },
         {
             "id": 8,
-            "movie": "The Lord of the Rings: The Fellowship of the Ring",
-            "rating": 8.8,
-            "image": "images/lotr_fellowship.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0120737/"
+            "title": "The Shawshank Redemption",
+            "description": "Two imprisoned men bond over years",
+            "releaseYear": 1994,
+            "genre": "Drama",
+            "watched": true,
+            "rating": 5,
+            "reviews": []
         },
         {
             "id": 9,
-            "movie": "Forrest Gump",
-            "rating": 8.8,
-            "image": "images/forrest_gump.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0109830/"
+            "title": "Gladiator",
+            "description": "A betrayed Roman general seeks revenge",
+            "releaseYear": 2000,
+            "genre": "Action",
+            "watched": false,
+            "rating": 4,
+            "reviews": []
         },
         {
             "id": 10,
-            "movie": "Inception",
-            "rating": 8.8,
-            "image": "images/inception.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt1375666/"
-        },
-        {
-            "id": 11,
-            "movie": "Interstellar",
-            "rating": 8.6,
-            "image": "images/interstellar.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0816692/"
-        },
-        {
-            "id": 12,
-            "movie": "The Matrix",
-            "rating": 8.7,
-            "image": "images/matrix.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0133093/"
-        },
-        {
-            "id": 13,
-            "movie": "Schindler's List",
-            "rating": 8.9,
-            "image": "images/schindlers_list.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0108052/"
-        },
-        {
-            "id": 14,
-            "movie": "The Silence of the Lambs",
-            "rating": 8.6,
-            "image": "images/silence_lambs.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0102926/"
-        },
-        {
-            "id": 15,
-            "movie": "Star Wars: Episode V - The Empire Strikes Back",
-            "rating": 8.7,
-            "image": "images/empire_strikes_back.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0080684/"
-        },
-        {
-            "id": 16,
-            "movie": "Saving Private Ryan",
-            "rating": 8.6,
-            "image": "images/saving_private_ryan.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0120815/"
-        },
-        {
-            "id": 17,
-            "movie": "Parasite",
-            "rating": 8.6,
-            "image": "images/parasite.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt6751668/"
-        },
-        {
-            "id": 18,
-            "movie": "Gladiator",
-            "rating": 8.5,
-            "image": "images/gladiator.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0172495/"
-        },
-        {
-            "id": 19,
-            "movie": "Jurassic Park",
-            "rating": 8.1,
-            "image": "images/jurassic_park.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0107290/"
-        },
-        {
-            "id": 20,
-            "movie": "The Lion King",
-            "rating": 8.5,
-            "image": "images/lion_king.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0110357/"
-        },
-        {
-            "id": 21,
-            "movie": "Blade Runner 2049",
-            "rating": 8,
-            "image": "images/blade_runner_2049.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt1856101/"
-        },
-        {
-            "id": 22,
-            "movie": "The Prestige",
-            "rating": 8.5,
-            "image": "images/the_prestige.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0482571/"
-        },
-        {
-            "id": 23,
-            "movie": "Mad Max: Fury Road",
-            "rating": 8.1,
-            "image": "images/mad_max_fury_road.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt1392190/"
-        },
-        {
-            "id": 24,
-            "movie": "The Departed",
-            "rating": 8.5,
-            "image": "images/the_departed.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt0407887/"
-        },
-        {
-            "id": 25,
-            "movie": "Whiplash",
-            "rating": 8.5,
-            "image": "images/whiplash.jpg",
-            "imdb_url": "https://www.imdb.com/title/tt2582802/"
+            "title": "The Godfather",
+            "description": "The aging patriarch of a crime family transfers control to his reluctant son",
+            "releaseYear": 1972,
+            "genre": "Crime",
+            "watched": true,
+            "rating": 5,
+            "reviews": []
         }
     ]
 }
