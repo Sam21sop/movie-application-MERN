@@ -5,11 +5,61 @@ The Movie Watchlist application is a web-based tool that allows users to manage 
 
 
 ## Features
-1. Add to watchlist
+1. Add movie watchlist
 2. Edit/Update movie
 3. Remove from watchlist
 4. Mark movie isWatched?
 5. Rate and Review Movies
+
+## Functional Requirement
+1. Moview Management
+    - Add movie (Form fields: Title (required), Description, Release Year, Genre.)
+    - edit movie (Form fields pre-filled with existing movie details.)
+    - delete movie (delete a movie based on Id)
+2. Rating and Review Management
+    - Rating a movie (Star rating component allowing users to rate a movie from 1 to 5 stars.)
+    - Add review (Textarea input for users to write a review.)
+3. Watch status Management
+    - Mark as watched/unwatched
+
+## Technical Specification
+1. Frontend
+    - ReactJs (Building User interface)
+    - Redux-Toolkit (State management)
+    - Tailwind CSS (Utility classes for fast development)
+2. Backend
+    - Mock API using JSON server
+    - NodeJs/ExpressJs (optinally)
+3. Database
+    - MongoDB (Persistent storage.)
+    - localstorage
+
+## User Interface Design 
+1. Home Page
+    - Display a list of movies in the watchlist.
+    - Buttons/links to add a new movie, edit or delete existing movies, and mark movies as watched/unwatched.
+2. Add/Edit Movie Page
+    - Form for adding or editing movie details.
+    - Fields: Title, Description, Release Year, Genre.
+    - Save and Cancel buttons.
+3. Movie Details Page
+    - Display movie details including title, description, release year, genre, watch status, rating, and reviews.
+    - Options to edit or delete the movie, mark it as watched/unwatched, and add/edit a rating and review.
+
+### Common Component
+1. Header: Component for the application header/navigation bar.
+2. Footer: Component for the application footer.
+3. Button: Reusable button component.
+4. Modal: Reusable modal component for confirmations and forms.
+5. Rating: Component for displaying and selecting star ratings.
+
+### Movie Managment Component
+1. MovieList: Component to display a list of movies.
+2. MovieCard: Component to display a single movie's details in a list.
+3. MovieForm: Component for the form used to add or edit a movie.
+4. MovieDetails: Component to display detailed information about a single movie.
+5. ReviewForm: Component for adding/editing a movie review.
+6. Review: Component to display a single review.
 
 
 ## Installation
@@ -18,4 +68,4 @@ The Movie Watchlist application is a web-based tool that allows users to manage 
 3. Install dependencies: `npm install`
 4. Run the Application `npm run dev`
 
-## Demo
+### [Demo](https://sam21sop.github.io/movie-application-MERN)
