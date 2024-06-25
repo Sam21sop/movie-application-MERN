@@ -62,5 +62,4 @@ const movieRedicer = moviesSlice.reducer;
 export default movieRedicer;
 
 // state selector from reducer
-export const movieSelector = (state) =>  state.movies
-console.log(movieSelector);
+export const movieSelector = (state) => state.movies

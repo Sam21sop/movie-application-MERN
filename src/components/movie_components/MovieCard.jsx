@@ -29,7 +29,7 @@ const MovieCard = ({ movie }) => {
 
             <div className='flex gap-4 items-center'>
                 <WatchedToggle watched={movie.watched} />
-                <Rating rating={movie.rating} onRatingChange={() => { }} />
+                <Rating rating={movie.rating} onRatingChange={(rating) => onRatingChange(movie.id, rating)} />
             </div>
             <div className="flex justify-between mt-4">
                 <Link to={`/movie-application-MERN/movies/${movie.id}`} className="text-blue-500">Details</Link>
