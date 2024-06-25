@@ -1,6 +1,6 @@
 # Movie Application
 
-## Project Description
+## Project Description [Demo](https://sam21sop.github.io/movie-application-MERN)
 The Movie Watchlist application is a web-based tool that allows users to manage a list of movies they want to watch. Users can add, edit, and delete movies from their watchlist, mark movies as watched or unwatched, and rate and review movies. State management will be handled using Redux to ensure efficient and predictable state updates.
 
 
@@ -67,5 +67,3 @@ The Movie Watchlist application is a web-based tool that allows users to manage 
 2. Navigate to the project directory: `cd movie-application-MERN`
 3. Install dependencies: `npm install`
 4. Run the Application `npm run dev`
-
-### [Demo](https://sam21sop.github.io/movie-application-MERN)
