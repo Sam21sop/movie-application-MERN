@@ -15,8 +15,8 @@ const MovieCard = ({ movie }) => {
             <WatchedToggle watched={movie.watched} />
             <Rating rating={movie.rating} onRatingChange={() => { }} />
             <div className="flex justify-between mt-4">
-                <Link to={`/movies/${movie.id}`} className="text-blue-500">Details</Link>
-                <Link to={`/edit/${movie.id}`} className="text-blue-500">Edit</Link>
+                <Link to={`/movie-application-MERN/movies/${movie.id}`} className="text-blue-500">Details</Link>
+                <Link to={`/movie-application-MERN/edit/${movie.id}`} className="text-blue-500">Edit</Link>
             </div>
         </div>
     );

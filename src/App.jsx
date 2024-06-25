@@ -9,41 +9,35 @@ import Footer from './components/shared_components/Footer';
 import MovieList from './components/movie_components/MovieList';
 import MovieForm from './components/movie_components/MovieForm';
 import MovieDetails from './components/movie_components/MovieDetails';
+import { useDispatch, useSelector } from 'react-redux';
+import { addMovie, addReview, changeRating, editMovie, movieSelector, toggleWatched } from './redux/moviesSlice/movieSlice';
 
 
 
 const App = () => {
-  const [movies, setMovies] = useState([
-    { id: 1, title: 'Inception', description: 'A mind-bending thriller', releaseYear: 2010, genre: 'Sci-Fi', watched: false, rating: 4, reviews: [] },
-    { id: 2, title: 'The Dark Knight', description: 'Batman battles the Joker', releaseYear: 2008, genre: 'Action', watched: true, rating: 5, reviews: [] },
-    { id: 3, title: 'Interstellar', description: 'A journey through space and time', releaseYear: 2014, genre: 'Sci-Fi', watched: false, rating: 5, reviews: [] },
-    { id: 4, title: 'The Matrix', description: 'A hacker discovers reality is a simulation', releaseYear: 1999, genre: 'Sci-Fi', watched: true, rating: 4, reviews: [] },
-    { id: 5, title: 'Pulp Fiction', description: 'Intersecting stories of crime and redemption', releaseYear: 1994, genre: 'Crime', watched: false, rating: 5, reviews: [] },
-    { id: 6, title: 'Fight Club', description: 'An insomniac forms an underground fight club', releaseYear: 1999, genre: 'Drama', watched: false, rating: 4, reviews: [] },
-    { id: 7, title: 'Forrest Gump', description: 'The life story of a slow-witted man', releaseYear: 1994, genre: 'Drama', watched: true, rating: 5, reviews: [] },
-    { id: 8, title: 'The Shawshank Redemption', description: 'Two imprisoned men bond over years', releaseYear: 1994, genre: 'Drama', watched: true, rating: 5, reviews: [] },
-    { id: 9, title: 'Gladiator', description: 'A betrayed Roman general seeks revenge', releaseYear: 2000, genre: 'Action', watched: false, rating: 4, reviews: [] },
-    { id: 10, title: 'The Godfather', description: 'The aging patriarch of a crime family transfers control to his reluctant son', releaseYear: 1972, genre: 'Crime', watched: true, rating: 5, reviews: [] },
-  ]);
+
+
+  const movies = useSelector(movieSelector);
+  const dispatch = useDispatch();
 
   const handleSaveMovie = (movie) => {
     if (movie.id) {
-      setMovies(movies.map(m => m.id === movie.id ? movie : m));
+      dispatch(editMovie(movie));
     } else {
-      setMovies([...movies, { ...movie, id: Date.now(), reviews: [] }]);
+      dispatch(addMovie(movie));
     }
   };
 
   const handleReviewSubmit = (movieId, review) => {
-    setMovies(movies.map(m => m.id === movieId ? { ...m, reviews: [...m.reviews, { ...review, id: Date.now() }] } : m));
+    dispatch(addReview({ movieId, review }));
   };
 
   const handleToggleWatched = (movieId) => {
-    setMovies(movies.map(m => m.id === movieId ? { ...m, watched: !m.watched } : m));
+    dispatch(toggleWatched(movieId));
   };
 
   const handleRatingChange = (movieId, rating) => {
-    setMovies(movies.map(m => m.id === movieId ? { ...m, rating } : m));
+    dispatch(changeRating({ movieId, rating }));
   };
 
   return (
@@ -52,7 +46,7 @@ const App = () => {
         <Header />
         <main className="flex-grow container mx-auto p-4">
           <Routes>
-            <Route path="/movie-application-MERN/" element={<MovieList movies={movies} />} />
+            <Route path="/movie-application-MERN" element={<MovieList movies={movies} />} />
             <Route path="/movie-application-MERN/add" element={<MovieForm onSave={handleSaveMovie} />} />
             <Route path="/movie-application-MERN/edit/:id" element={<MovieForm onSave={handleSaveMovie} />} />
             <Route path="/movie-application-MERN/movies/:id" element={<MovieDetails movies={movies} onReviewSubmit={handleReviewSubmit} onToggleWatched={handleToggleWatched} onRatingChange={handleRatingChange} />} />

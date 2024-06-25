@@ -8,8 +8,8 @@ const Header = () => {
                 <div className="container mx-auto flex justify-between items-center">
                     <h1 className="text-xl font-bold">Movie Watchlist</h1>
                     <nav>
-                        {/* <Link to="/" className="mr-4">Home</Link>
-                        <Link to="/add" className="mr-4">Add Movie</Link> */}
+                        <Link to="/movie-application-MERN" className="mr-4">Home</Link>
+                        <Link to="/movie-application-MERN/add" className="mr-4">Add Movie</Link>
                     </nav>
                 </div>
             </header>

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Grid = ({ children, cols = 1, smCols = 2}) => {
+const Grid = ({ children, smCols=4}) => {
   return (
-    <div className={`grid grid-cols-${cols} sm:grid-cols-${smCols} gap-4`}>
+    <div className={`grid sm:grid-cols-${smCols} gap-4`}>
       {children}
     </div>
   );

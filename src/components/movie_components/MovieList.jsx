@@ -5,7 +5,7 @@ import Grid from '../layout_components/Grid';
 
 const MovieList = ({ movies, onToggleWatched }) => {
   return (
-    <Grid cols={1} smCols={2}>
+    <Grid>
       {movies.map(movie => (
         <MovieCard
           key={movie.id}
