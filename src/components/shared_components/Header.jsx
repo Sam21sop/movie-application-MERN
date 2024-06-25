@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink, Outlet } from 'react-router-dom'
 
 const Header = () => {
     return (
@@ -13,6 +13,9 @@ const Header = () => {
                     </nav>
                 </div>
             </header>
+            <main className='w-full bg-gray-300 py-4'>
+                <Outlet/>
+            </main>
         </>
     )
 }

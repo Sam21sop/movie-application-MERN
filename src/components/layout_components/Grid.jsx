@@ -2,7 +2,7 @@ import React from 'react';
 
 const Grid = ({ children, smCols=4}) => {
   return (
-    <div className={`grid sm:grid-cols-${smCols} gap-4`}>
+    <div className={`grid w-full gap-4 px-6 grid-cols-${smCols}`}>
       {children}
     </div>
   );

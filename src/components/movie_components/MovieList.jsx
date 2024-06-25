@@ -5,7 +5,7 @@ import Grid from '../layout_components/Grid';
 
 const MovieList = ({ movies, onToggleWatched }) => {
   return (
-    <Grid>
+    <div className='grid w-full gap-4 px-6 grid-cols-4'>
       {movies.map(movie => (
         <MovieCard
           key={movie.id}
@@ -13,7 +13,7 @@ const MovieList = ({ movies, onToggleWatched }) => {
           onToggleWatched={() => onToggleWatched(movie.id)}
         />
       ))}
-    </Grid>
+    </div>
   );
 };
 

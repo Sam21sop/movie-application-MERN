@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { addMovie, editMovie } from '../../redux/moviesSlice/movieSlice';
+import { addMovie, editMovie, movieSelector } from '../../redux/moviesSlice/movieSlice';
 
 
 const MovieForm = () => {
   const { id } = useParams();
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const movies = useSelector(state => state.movies);
+  const movies = useSelector(movieSelector);  
   const [movie, setMovie] = useState({ 
     title: '', 
     description: '', 
