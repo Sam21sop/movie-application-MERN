@@ -63,6 +63,8 @@ The Movie Watchlist application is a web-based tool that allows users to manage 
 
 
 ## Folder Structure
+#### [React Component Hierarchi](./public/movie_watchlist.pdf)
+
 ```
 src/
     |
@@ -97,7 +99,6 @@ src/
     ├── App.jsx
     ├── main.jsx
     ├── index.html
-
 ```
 
 ## Installation
