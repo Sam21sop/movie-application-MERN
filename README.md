@@ -62,6 +62,44 @@ The Movie Watchlist application is a web-based tool that allows users to manage 
 6. Review: Component to display a single review.
 
 
+## Folder Structure
+```
+src/
+    |
+    ├── components/
+    │       ├── layout_components/
+    │       │       ├── Container.jsx
+    │       │       ├── Grid.jsx
+    │       ├── movie_components/
+    │       │       ├── MovieCard.jsx
+    │       │       ├── MovieDetails.jsx
+    │       │       ├── MovieForm.jsx
+    │       │       ├── MovieList.jsx
+    │       │       ├── ReviewForm.jsx
+    │       │       ├── Review.jsx
+    │       │       ├── WatchedToggle.jsx
+    │       ├── shared_components/
+    │       │       ├── Button.jsx
+    │       │       ├── EditIcon.jsx
+    │       │       ├── DeleteIcon.jsx
+    │       │       ├── Footer.jsx
+    │       │       ├── Header.jsx
+    │       │       ├── Modal.jsx
+    │       │       ├── Rating.jsx
+    |
+    ├── redux/
+    │       ├── moviesSlice/
+    │       │       ├── movieSlice.js
+    │       ├── ratingsSlice/
+    │       │       ├── ratingSlice.js
+    │       ├── store.js
+    |
+    ├── App.jsx
+    ├── main.jsx
+    ├── index.html
+
+```
+
 ## Installation
 1. Clone the repository: `git clone https://github.com/Sam21sop/movie-application-MERN.git`
 2. Navigate to the project directory: `cd movie-application-MERN`
